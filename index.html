@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>My Pomodoro Application</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>My Pomodoro Application</h1>
-        <div id="timer" class="timer">25:00</div>
-        <button id="start" class="btn">Start</button>
-        <button id="stop" class="btn">Stop</button>
-    </div>
-    <script src="assets/js/script.js"></script>
-</body>
+  <header>
+    <h1>Star Wars Theme</h1>
+  </header>
 
+  <div class="container">
+    <div class="lightsaber"></div>
+    <div class="death-star"></div>
+    <div class="x-wing"></div>
+    <div class="tie-fighter"></div>
+  </div>
+
+  <div class="welcome-section">
+    <h2>Welcome to the Star Wars Game!</h2>
+    <p>May the Force be with you.</p>
+    <div class="buttons">
+      <button id="start-game">Start Game</button>
+      <button id="show-rules">Show Rules</button>
+    </div>
+    <div id="game-rules" class="hidden">
+      <h3>Game Rules</h3>
+      <p>Insert your game rules here.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
