@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
   <header>
-    <h1>Star Wars Theme</h1>
+    <h1>Star Wars Game</h1>
   </header>
-
-  <div class="container">
-    <div class="lightsaber"></div>
-    <div class="death-star"></div>
-    <div class="x-wing"></div>
-    <div class="tie-fighter"></div>
-  </div>
-
   <div class="welcome-section">
     <h2>Welcome to the Star Wars Game!</h2>
     <p>May the Force be with you.</p>
-    <div class="buttons">
-      <button id="start-game">Start Game</button>
-      <button id="show-rules">Show Rules</button>
-    </div>
-    <div id="game-rules" class="hidden">
+    <button id="start-game">Start Game</button>
+    <button id="show-rules">Show Rules</button>
+  </div>
+
+  <div id="rules-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
       <h3>Game Rules</h3>
-      <p>Insert your game rules here.</p>
+        <p>1- The objective of the game is to find all matching pairs of cards.</p>
+        <p>2- The game board consists of a grid of facedown cards.</p>
+        <p>3- On each turn, you can flip two cards to reveal their faces.</p>
+        <p>4- If the two flipped cards have the same image, they remain face up and are considered a match.</p>
+        <p>5- If the two flipped cards have different images, they are flipped back facedown.</p>
+        <p>6- Remember the positions of the cards as you flip them to help you find matching pairs.</p>
+        <p>7- The game continues until all the cards are matched and faced up.</p>
+        <p>8- The game is won when all the cards are matched, and a message or a prompt can be displayed to signify the completion of the game.</p>
+        <p>9- Enjoy and try to beat your own record time!.</p>
+      </p>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
